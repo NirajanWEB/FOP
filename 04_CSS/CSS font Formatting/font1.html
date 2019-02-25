@@ -1,0 +1,115 @@
+<!--
+Font Family:
+==> The font family of a text is set with the font-family property
+==> The font-family property should hold several font names as a "fallback" system. 
+If the browser does not support the first font, it tries the next font, and so on
+
+p {
+  font-family: "Times New Roman", Times, serif;
+}
+
+Font Style:
+==> properties:
+		normal - The text is shown normally
+		italic - The text is shown in italics
+		oblique - The text is "leaning" (oblique is very similar to italic, but less supported)
+		
+		
+Font Size:
+==> The font-size property sets the size of the text.
+
+h1 {
+  font-size: 40px;
+}
+
+h1 {
+  font-size: 2.5em; /* 40px/16=2.5em */
+}
+
+body {
+  font-size: 100%;
+}
+
+==> The default text size in browsers is 16px
+==> The size can be calculated from pixels to em using this formula: pixels/16=em
+
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.normal {
+    font-style: normal;
+}
+
+p.italic {
+    font-style: italic;
+}
+
+p.oblique {
+    font-style: oblique;
+}
+</style>
+</head>
+<body>
+
+<p class="normal">This is a paragraph in normal style.</p>
+<p class="italic">This is a paragraph in italic style.</p>
+<p class="oblique">This is a paragraph in oblique style.</p>
+
+</body>
+</html>
+
+
+<!--
+Font Weight:
+==> The font-weight property specifies the weight of a font
+
+p.normal {
+  font-weight: normal;
+}
+
+p.thick {
+  font-weight: bold;
+}
+
+Responsive Font Size:
+==> The text size can be set with a vw unit, which means the "viewport width"
+==> text size will follow the size of the browser window
+<h1 style="font-size:10vw">Hello World</h1>
+
+==> Viewport is the browser window size
+==> 1vw = 1% of viewport width
+==> If the viewport is 50cm wide, 1vw is 0.5cm
+
+
+Font Variant:
+==> font-variant property specifies whether or not a text should be displayed in a small-caps font
+==> small-caps font ==> all lowercase letters are converted to uppercase letters
+					==> smaller font size than the original uppercase letters
+p.normal {
+  font-variant: normal;
+}
+
+p.small {
+  font-variant: small-caps;
+}
+
+font shorthand property:
+==> The font property is a shorthand property for:
+Order:
+	font-style
+	font-variant
+	font-weight
+	font-size/line-height
+	font-family
+
+p.b {
+  font: italic bold 12px/30px Georgia, serif;
+  }
+
+-->
+
+

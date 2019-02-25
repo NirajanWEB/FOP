@@ -1,0 +1,33 @@
+<!--
+Number() converts to a Number, String() converts to a String, Boolean() converts to a Boolean.
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The JavaScript String() Method</h2>
+
+<p>The String() method can convert a number to a string.</p>
+
+<p id="demo"></p>
+
+<script>
+var x = 123;
+document.getElementById("demo").innerHTML =
+  String(x) + "<br>" +
+  typeof String(123) + "<br>" +
+  String(100 + 23) +
+  Number("99+88");
+</script>
+</body>
+</html>
+<!--
+String(false)        // returns "false"
+String(true)         // returns "true"
+Number("3.14")    // returns 3.14
+Number(" ")       // returns 0 
+Number("")        // returns 0
+Number("99+88")   // returns NaN
+Number(false)     // returns 0
+Number(true)      // returns 1
+-->

@@ -1,0 +1,109 @@
+<!--
+Regular Expressions:
+==> A regular expression is a sequence of characters that forms a search pattern.
+==> The search pattern can be used for text search and text replace operations.
+
+Syntax:
+/pattern/modifiers;
+
+Example:
+var patt = /neosphere/i;
+==> neosphere  is a pattern (to be used in a search).
+==> i  is a modifier (modifies the search to be case-insensitive).
+
+
+==> regular expressions are often used with the two string methods: 
+search() and replace().
+==> The search() method uses an expression to search for a match, and returns the position of the match.
+==> The replace() method returns a modified string where the pattern is replaced.
+
+Regular Expression Modifiers:
+==> Modifiers can be used to perform case-insensitive more global searches:
+Modifier	Description	
+i			Perform case-insensitive matching	
+g			Perform a global match (find all matches rather than stopping after the first match)	
+m			Perform multiline matching
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to do a global search for "is" in a string.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var str = "Is this all there is?";
+  var patt1 = /is/g;
+  var result = str.match(patt1);
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
+
+<!--
+Regular Expression Patterns:
+==> Brackets are used to find a range of characters:
+
+Expression	Description	
+[abc]		Find any of the characters between the brackets	
+[^abc]		Find any character NOT between the brackets
+[0-9]		Find any of the digits between the brackets
+[^0-9]		Find any character NOT between the brackets (any non-digit)	
+(x|y)		Find any of the alternatives separated with |
+
+==> Metacharacters are characters with a special meaning:
+Metacharacter	Description	
+\d				Find a digit	
+\s				Find a whitespace character	
+\b				Find a match at the beginning or at the end of a word	
+\uxxxx			Find the Unicode character specified by the hexadecimal number xxxx
+
+Quantifiers define quantities:
+Quantifier	Description	Try it
+n+			Matches any string that contains at least one n
+n*			Matches any string that contains zero or more occurrences of n
+n?			Matches any string that contains zero or one occurrences of n
+
+RegExp Object:
+test():
+==> It searches a string for a pattern, and returns true or false, depending on the result.
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Regular Expressions</h2>
+<p>Search for an "e" in the next paragraph:</p>
+<p id="p01">The best things in life are free!</p>
+<p id="demo"></p>
+<script>
+text = document.getElementById("p01").innerHTML; 
+document.getElementById("demo").innerHTML = /e/.test(text);
+</script>
+</body>
+</html>
+
+exec():
+==> The exec() method is a RegExp expression method.
+==> It searches a string for a specified pattern, and returns the found text as an object.
+==> If no match is found, it returns an empty (null) object.
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Regular Expressions</h2>
+<p id="demo"></p>
+<script>
+var obj = /e/.exec("The best things in life are free!");
+document.getElementById("demo").innerHTML =
+"Found " + obj[0] + " in position " + obj.index + " in the text: " + obj.input;
+</script>
+</body>
+</html>
+
+
+-->

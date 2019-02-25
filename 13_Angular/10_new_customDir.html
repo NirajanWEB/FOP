@@ -1,0 +1,45 @@
+<!--
+Custom Directive:
+
+Custom directives are created by using the .directive function.
+
+To invoke the Custom directive, make an HTML element with the same tag name as the new directive
+
+
+When naming a directive, you must use a camel case name, 
+myTestDirective, but when invoking it, you must use - separated name, my-test-directive:
+-->
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body ng-app="myApp">
+
+<my-test-directive></my-test-directive>
+
+<script>
+var app = angular.module("myApp", []);
+app.directive("myTestDirective", function() {
+    return {
+        template : "<h1>Custom Directive</h1>"
+    };
+});
+</script>
+
+</body>
+</html>
+
+<!--
+we can Invoke Custom Directive using:
+
+Element name:
+<my-test-directive></my-test-directive>
+
+Attribute : 
+<div my-test-directive></div>
+
+Class :
+<div class="my-test-directive"></div>
+
+Comment :
+<!-- directive: my-test-directive -->
+-->

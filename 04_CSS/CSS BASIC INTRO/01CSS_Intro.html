@@ -1,0 +1,127 @@
+<!--
+CSS:
+==> CSS is a language that describes the style of an HTML document
+==> CSS stands for Cascading Style Sheets
+==> World Wide Web Consortium (W3C) created CSS
+
+CSS Syntax:
+
+selector{
+	property:value;
+	property:value;
+	.
+	.
+	property:value;
+}
+
+
+p {
+  color: red;
+  text-align: center;
+}
+
+
+CSS Selectors:
+
+==> element Selector : selects elements based on the element name
+p {
+  text-align: center;
+  color: red;
+}
+
+==>  id Selector : select an element with a specific id, write a hash (#) character, 
+					followed by the id of the element
+#para1 {
+  text-align: center;
+  color: red;
+}
+
+==> class Selector: select elements with a specific class, write a period (.) character,
+					followed by the name of the class
+					
+.center {
+  text-align: center;
+  color: red;
+}
+
+CSS Comments:
+==> starts with /* and ends with */
+p {
+  color: red;
+  /* This is a single-line comment */
+  text-align: center;
+}
+
+/* This is
+a multi-line
+comment */
+
+
+
+Ways to Insert CSS:
+==> Inline
+==> Internal
+==> External
+
+
+Inline :
+<h1 style="color:blue;margin-left:30px;">This is a heading</h1>
+
+
+Internal :
+==> Internal styles are defined within the <style> element, inside the <head> section of an HTML page
+<head>
+<style>
+body {
+  background-color: linen;
+}
+h1 {
+  color: maroon;
+  margin-left: 40px;
+} 
+</style>
+</head>
+
+
+External:
+==> reference to the external style sheet file inside the <link> element
+ <head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+==> external style sheet file must be saved with a .css extension
+==> "mystyle.css" looks:
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<!--<link rel="stylesheet" type="text/css" href="style.css">-->
+<style>
+p {
+  color: red;
+  /* This is a single-line comment */
+  text-align: center;
+} 
+
+/* This is
+a multi-line
+comment */
+</style>
+</head>
+<body>
+
+<p>Hello World!</p>
+<p>This paragraph is styled with CSS.</p>
+<p>CSS comments are not shown in the output.</p>
+
+</body>
+</html>

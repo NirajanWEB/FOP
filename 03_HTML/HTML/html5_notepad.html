@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>HTML5 Notepad</title>
+    </head>
+    
+    <body>
+        
+        <h1>My HTML5 Notepad</h1>
+        <p>Type some text in the area below, and refresh your browser!</p>
+        
+        <div id="content" contenteditable="true" style="border:solid 1px black;"></div>
+
+        <script>
+            var key = "draft",
+                customText = document.getElementById("content");
+
+            customText.innerHTML = localStorage[key];
+            customText.onkeyup=function() {
+                localStorage[key] = customText.innerHTML;
+            };
+        </script>
+        
+    </body>
+    
+</html>

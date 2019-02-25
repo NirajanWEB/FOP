@@ -1,0 +1,45 @@
+<!--
+The CSS transition properties can be specified one by one
+or by using the shorthand property transition:
+
+		-webkit-transition: width 2s linear 1s; /* For Safari 3.1 to 6.0 */
+		transition: width 2s linear 1s;
+		transition: height 2s ease 1s;
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    /* For Safari 3.1 to 6.0 */
+    -webkit-transition-property: width;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: linear;
+    -webkit-transition-delay: 1s;
+    /* Standard syntax */
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+
+div:hover {
+    width: 300px;
+}
+</style>
+</head>
+<body>
+
+<h1>The transition Properties Specified One by One</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+
+<div></div>
+
+
+
+</body>
+</html>

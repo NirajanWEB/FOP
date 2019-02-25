@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+ <div class="panel panel-default">
+  <div class="panel-body">A Basic Panel</div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">Panel Heading</div>
+  <div class="panel-body">Panel Content</div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-body">Panel Content</div>
+  <div class="panel-footer">Panel Footer</div>
+</div>
+<div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-body">Panel Content</div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-body">Panel Content</div>
+  </div>
+</div>
+<div id="demo" class="dropup collapse in">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+     <li class="dropdown-header">Dropdown header 1</li>
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+	 <li class="divider"></li>
+	  <li class="dropdown-header">Dropdown header 2</li>
+      <li><a href="#">About Us</a></li>
+  </ul>
+</div>
+<button data-toggle="collapse" data-target="#demo">Collapsible</button>
+<div  class="collapse">
+Some text....
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!--
+Functions Used as Variable Values:
+
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+Fahrenheit: <input type = "text" id = "f">
+<button onclick = celcius();> click </button>
+
+<p id="demo"></p>
+
+<script>
+function celcius(){
+	var f = parseInt(document.getElementById("f").value);
+	document.getElementById("demo").innerHTML = "Temperature is " + ((5/9) * (f-32));
+} 
+</script>
+
+</body>
+</html>

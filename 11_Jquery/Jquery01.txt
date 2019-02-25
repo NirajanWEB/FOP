@@ -1,0 +1,51 @@
+jQuery Syntax:
+
+With jQuery you select (query) HTML elements and perform "actions" on them.
+
+
+
+Basic syntax is: $(selector).action()
+
+A $ sign to define/access jQuery
+A (selector) to "query (or find)" HTML elements
+A jQuery action() to be performed on the element(s)
+Examples:
+
+$(this).hide() - hides the current element.
+
+$("p").hide() - hides all <p> elements.
+
+$(".test").hide() - hides all elements with class="test".
+
+$("#test").hide() - hides the element with id="test".
+
+
+
+The Document Ready Event
+
+$(document).ready(function(){
+
+   // jQuery methods go here...
+
+});
+
+==> This is to prevent any jQuery code 
+from running before the document is finished loading (is ready).
+
+
+Shorter Method:
+
+$(function(){
+
+   // jQuery methods go here...
+
+});
+
+
+Jquery in separate file
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script src="my_jquery_functions.js"></script>
+</head>

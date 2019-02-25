@@ -1,0 +1,40 @@
+<!--
+Form Validation:
+
+-->
+
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>  
+<body ng-app="">
+
+<p>Try writing in the input field:</p>
+
+<form name="myForm">
+<input name="myInput" ng-model="myInput" required>
+</form>
+
+<p>The input's valid state is:</p>
+<h1>{{myForm.myInput.$valid}}</h1>
+
+</body>
+</html>
+<!--
+Form State and Input State:
+
+
+Input fields have the following states:
+$untouched 	The field has not been touched yet
+$touched 	The field has been touched
+$pristine 	The field has not been modified yet
+$dirty 		The field has been modified
+$invalid 	The field content is not valid
+$valid 		The field content is valid
+
+Forms have the following states:
+$pristine 	No fields have been modified yet
+$dirty 		One or more have been modified
+$invalid 	The form content is not valid
+$valid 		The form content is valid
+$submitted 	The form is submitted
+-->

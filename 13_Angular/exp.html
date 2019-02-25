@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>  
+<body>
+
+<h2>Validation Example</h2>
+
+<form ng-app="myApp" ng-controller="validateCtrl" 
+name="myForm" novalidate>
+
+<p>First Number:<br>
+<input type="number" id = "x" name="user" ng-model="user" required>
+<span style="color:red" ng-show="myForm.user.$dirty && myForm.user.$invalid">
+<span ng-show="myForm.user.$error.required">Please Enter a number</span>
+</span>
+</p><br>
+<h1> + </h1>
+
+
+<p>Second Number:<br>
+<input type="number" id= "y" name="usr" ng-model="usr" required>
+<span style="color:red" ng-show="myForm.usr.$dirty && myForm.usr.$invalid">
+<span ng-show="myForm.usr.$error.required">Please Enter a number</span>
+</span>
+</p>
+</p>
+
+<p>
+<input type="submit" onclick="myfunction();"
+ng-disabled="myForm.user.$dirty && myForm.user.$invalid ||  
+myForm.usr.$dirty && myForm.usr.$invalid">
+</p>
+
+</form>
+<p id="res"></p>
+<script>
+var app = angular.module('myApp', []);
+app.controller('validateCtrl', function($scope) {
+    $scope.user = 0;
+    $scope.usr = 0
+});
+
+function myfunction(){
+var x = parseInt(document.getElementById("x").value);
+var y = parseInt(document.getElementById("y").value);
+document.getElementById("res").innerHTML = x+y;
+};
+</script>
+
+</body>
+</html>

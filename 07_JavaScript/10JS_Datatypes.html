@@ -1,0 +1,65 @@
+<!--
+JavaScript Data Types:
+
+var length = 16;                               // Number
+var lastName = "Johnson";                      // String
+var x = {firstName:"John", lastName:"Doe"};    // Object
+
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript</h2>
+
+<p>When adding a number and a string, JavaScript will treat the number as a string.</p>
+
+<p id="demo"></p>
+
+<script>
+var x = 16 + "Volvo";
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
+<!--
+var x = 16 + "Volvo";
+var x = "16" + "Volvo";
+var x = "Volvo" + 16;
+var x = 16 + 4 + "Volvo";
+var x = "Volvo" + 16 + 4;
+
+JavaScript Types are Dynamic:
+var x;           // Now x is undefined
+x = 5;           // Now x is a Number
+x = "John";      // Now x is a String
+
+JavaScript Strings:
+var carName = "Volvo XC60";   // Using double quotes
+var carName = 'Volvo XC60';   // Using single quotes
+
+var answer = "It's alright";             // Single quote inside double quotes
+var answer = "He is called 'Johnny'";    // Single quotes inside double quotes
+var answer = 'He is called "Johnny"';    // Double quotes inside single quotes
+
+JavaScript Numbers:
+var x1 = 34.00;
+var x2 = 34;
+var x3 = 3.14;
+document.getElementById("demo").innerHTML =
+x1 + "<br>" + x2 + "<br>" + x3;
+
+scientific (exponential) notation:
+var y = 123e5;      // 12300000
+var z = 123e-5;     // 0.00123
+
+JavaScript Booleans:
+var x = 5;
+var y = 5;
+var z = 6;
+(x == y)       // Returns true
+(x == z)       // Returns false
+
+
+-->

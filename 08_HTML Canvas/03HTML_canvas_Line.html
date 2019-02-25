@@ -1,0 +1,34 @@
+<!--
+Canvas Coordinates:
+==> The HTML canvas is a two-dimensional grid.
+==> The upper-left corner of the canvas has the coordinates (0,0)
+
+Draw a Line:
+==> To draw a straight line on a canvas, use the following methods:
+		moveTo(x,y) - defines the starting point of the line
+		lineTo(x,y) - defines the ending point of the line
+		
+To actually draw the line, you must use one of the "ink" methods, like stroke().
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="200" height="100"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script>
+
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.stroke();
+
+</script>
+
+</body>
+</html>

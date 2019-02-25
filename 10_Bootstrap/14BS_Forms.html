@@ -1,0 +1,146 @@
+<!--
+Forms:
+==> All textual <input>, <textarea>, and <select> elements with class .form-control have a width of 100%
+==> Bootstrap provides three types of form layouts:
+		Vertical form (this is default)
+		Horizontal form
+		Inline form
+		
+Standard rules for all three form layouts:
+==> Wrap labels and form controls in <div class="form-group"> (needed for optimum spacing)
+==> Add class .form-control to all textual <input>, <textarea>, and <select> elements
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Vertical (basic) form</h2>
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" 
+	  placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" 
+	  placeholder="Enter password" name="pwd">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
+
+<!--
+Inline Form:
+==> Add class .form-inline to the <form> element
+==> In an inline form, all of the elements are inline, left-aligned, and the labels are alongside
+<form class="form-inline">
+
+
+.sr-only ==> screen readers ==> hide the labels
+
+Horizontal Form:
+==> Add class .form-horizontal to the <form> element
+==> Add class .control-label to all <label> elements
+
+<form class="form-horizontal">
+
+ <div class="form-group">
+    <label class="control-label col-sm-2" for="email">Email:</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+  </div>
+  
+  
+Form Inputs:
+==> Bootstrap supports the following form controls:
+input
+textarea
+checkbox
+radio
+select
+
+Input:
+==> Bootstrap supports all the HTML5 input types: text, password, datetime, datetime-local, 
+date, month, time, week, number, email, url, search, tel, and color
+
+<div class="form-group">
+  <label for="usr">Name:</label>
+  <input type="text" class="form-control" id="usr">
+</div>
+<div class="form-group">
+  <label for="pwd">Password:</label>
+  <input type="password" class="form-control" id="pwd">
+</div>
+
+
+Textarea:
+<div class="form-group">
+  <label for="comment">Comment:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+</div>
+
+Checkboxes:
+<div class="checkbox">
+  <label><input type="checkbox" value="">Option 1</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" value="">Option 2</label>
+</div>
+<div class="checkbox disabled">
+  <label><input type="checkbox" value="" disabled>Option 3</label>
+</div>
+
+==> Use the .checkbox-inline class if you want the checkboxes to appear on the same line
+<label class="checkbox-inline"><input type="checkbox" value="">Option 1</label>
+<label class="checkbox-inline"><input type="checkbox" value="">Option 2</label>
+<label class="checkbox-inline"><input type="checkbox" value="">Option 3</label>
+
+Radio Buttons:
+<div class="radio">
+  <label><input type="radio" name="optradio" checked>Option 1</label>
+</div>
+<div class="radio">
+  <label><input type="radio" name="optradio">Option 2</label>
+</div>
+<div class="radio disabled">
+  <label><input type="radio" name="optradio" disabled>Option 3</label>
+</div>
+
+==> Use the .radio-inline class if you want the radio buttons to appear on the same line
+<label class="radio-inline"><input type="radio" name="optradio" checked>Option 1</label>
+<label class="radio-inline"><input type="radio" name="optradio">Option 2</label>
+<label class="radio-inline"><input type="radio" name="optradio">Option 3</label>
+
+Select List:
+<div class="form-group">
+  <label for="sel1">Select list:</label>
+  <select class="form-control" id="sel1">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+</div>
+
+
+
+-->

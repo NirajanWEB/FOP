@@ -1,0 +1,103 @@
+on() Method:
+
+==>The on() method attaches one or more event handlers for the selected elements.
+------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("p").on({
+        mouseenter: function(){
+            $(this).css("background-color", "lightgray");
+        },  
+        mouseleave: function(){
+            $(this).css("background-color", "lightblue");
+        }, 
+        click: function(){
+            $(this).css("background-color", "yellow");
+        }  
+    });
+});
+</script>
+</head>
+<body>
+<p> this  is some text </p>
+</body>
+</html>
+-----------------------------------------------------------------------------------------------------
+jQuery Effects - Hide and Show:
+-----------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+</head>
+<body>
+
+<p>If you click on the "Hide" button, I will disappear.</p>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+</body>
+</html>
+---------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").hide(1000);
+    });
+});
+</script>
+</head>
+<body>
+
+<button>Hide</button>
+
+<p>This is a paragraph with little content.</p>
+<p>This is another small paragraph.</p>
+
+</body>
+</html>
+-----------------------------------------------------------------------------------------------
+jQuery toggle():
+==>With jQuery, you can toggle between the hide() and show() methods with the toggle() method.
+------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").toggle();
+    });
+});
+</script>
+</head>
+<body>
+
+<button>Toggle between hiding and showing the paragraphs</button>
+
+<p>This is a paragraph with little content.</p>
+<p>This is another small paragraph.</p>
+
+</body>
+</html>
+--------------------------------------------------------------------------------------------------

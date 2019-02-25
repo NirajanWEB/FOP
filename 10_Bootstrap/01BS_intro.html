@@ -1,0 +1,95 @@
+<!--
+Bootstrap:
+==> Bootstrap is the most popular HTML, CSS, and JavaScript framework 
+for developing responsive, mobile-first websites.
+
+Advantages of Bootstrap:
+==> Easy to use: Anybody with just basic knowledge of HTML and CSS can 
+start using Bootstrap
+==> Responsive features: Bootstrap's responsive CSS adjusts to phones, 
+tablets, and desktops
+==> Mobile-first approach: In Bootstrap 3, mobile-first styles are part 
+of the core framework
+==> Browser compatibility: Bootstrap is compatible with all modern browsers 
+(Chrome, Firefox, Internet Explorer, Edge, Safari, and Opera)
+
+
+There are two ways to start using Bootstrap on your own web site:
+==> Download Bootstrap from getbootstrap.com
+==> Include Bootstrap from a CDN
+
+Downloading Bootstrap:
+If you want to download and host Bootstrap yourself, go to getbootstrap.com, 
+and follow the instructions there.
+
+Bootstrap CDN:
+If you don't want to download and host Bootstrap yourself, you can include it 
+from a CDN (Content Delivery Network).
+
+MaxCDN provides CDN support for Bootstrap's CSS and JavaScript:
+
+Latest compiled and minified CSS 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+Latest compiled JavaScript
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+You must also include jQuery:
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+jQuery:
+Bootstrap uses jQuery for JavaScript plugins (like modals, tooltips, etc). However, if you just use the 
+CSS part of Bootstrap, you don't need jQuery.
+
+
+Create First Web Page With Bootstrap:
+1. Add the HTML5 doctype
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+  </head>
+</html>
+
+2. Bootstrap 3 is mobile-first
+==> Bootstrap 3 is designed to be responsive to mobile devices. 
+Mobile-first styles are part of the core framework.
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+==> width=device-width part sets the width of the page to follow the screen-width 
+of the device (which will vary depending on the device).
+
+==> initial-scale=1 part sets the initial zoom level when the page is first 
+loaded by the browser.
+
+
+3. Containers:
+==> Bootstrap also requires a containing element to wrap site contents.
+==> There are two container classes to choose from:
+	==> The .container class provides a responsive fixed width container
+	==> The .container-fluid class provides a full width container, spanning
+	the entire width of the viewport
+	
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid" style="background-color:red"><!-- container-fluid-->
+  <h1>My First Bootstrap Page</h1>
+  <p>This is some text.</p> 
+</div>
+
+</body>
+</html>

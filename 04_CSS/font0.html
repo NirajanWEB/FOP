@@ -1,0 +1,35 @@
+<!--
+Font Family:
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.serif {
+    font-family: "Times New Roman", Times, serif;
+}
+
+p.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+
+<h1>CSS font-family</h1>
+<p class="serif">This is a paragraph, shown in the Times New Roman font.</p>
+<p class="sansserif">This is a paragraph, shown in the Arial font.</p>
+
+</body>
+</html>
+
+<!--
+font-family property should hold several font names as a "fallback" system. 
+If the browser does not support the first font, it tries the next font, and so on.
+
+Start with the font you want, and end with a generic family, to let the browser pick 
+a similar font in the generic family, if no other fonts are available.
+
+Note: If the name of a font family is more than one word, it must be in quotation marks, 
+like: "Times New Roman".
+-->

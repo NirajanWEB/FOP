@@ -1,0 +1,73 @@
+<!--
+animation-fill-mode property specifies a style for the 
+target element when the animation is not playing (before it starts, after it ends, or both).
+
+none - Default value. Animation will not apply any styles 
+to the element before or after it is executing
+
+forwards - The element will retain the style values that is set by the last keyframe 
+(depends on animation-direction and animation-iteration-count)
+
+backwards - The element will get the style values that is set by the first keyframe 
+(depends on animation-direction), and retain this during the animation-delay period
+
+both - The animation will follow the rules for both forwards and backwards, 
+extending the animation properties in both directions
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    -webkit-animation-name: example;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s;  /* Safari 4.0 - 8.0 */    
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 3s;
+		animation-direction: forward;
+    animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {top: 0px;}
+    to {top: 200px; background-color: blue;}
+}
+
+@keyframes example {
+    from {top: 0px;}
+    to {top: 200px; background-color: blue;}
+}
+</style>
+</head>
+<body>
+
+<p>Let the div element retain the style values from the last keyframe when the animation ends:</p>
+
+<div></div>
+
+<p><strong>Note:</strong> The animation-fill-mode property is not supported in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>
+
+<!--
+div {
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+Shorthand property:
+div {
+    animation: example 5s linear 2s infinite alternate;
+}
+-->

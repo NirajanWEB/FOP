@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+<div ng-app="myApp" ng-controller="datCtrl">
+<p>Date = {{ today | date }}</p>
+<p>Date = {{ today | date : "dd.MM.y"}}</p>
+<p>Date with time = {{ today | date :" M/d/yy h:mm a"}}</p>
+<p>Date = {{ today | date : "short"}}</p>
+<p>Date = {{ today | date : "medium"}}</p>
+<p>Date = {{ today | date : "shortDate"}}</p>
+<p>Date = {{ today | date : "longDate"}}</p>
+<p>Date = {{ today | date : "fullDate"}}</p>
+<p>Date = {{ today | date : "mediumTime"}}</p>
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.controller('datCtrl', function($scope) {
+    $scope.today = new Date();
+});
+</script>
+<p>The date filter formats a date object to a readable format.</p>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!--
+CSS Lists:
+==> CSS list properties allow you to:
+Set different list item markers for ordered lists
+Set different list item markers for unordered lists
+Set an image as the list item marker
+Add background colors to lists and list items
+
+List Item Markers:
+==> list-style-type property specifies the type of list item marker
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul.a {
+  list-style-type: circle;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
+</style>
+</head>
+<body>
+
+<p>Example of unordered lists:</p>
+<ul class="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<ul class="b">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<p>Example of ordered lists:</p>
+<ol class="c">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="d">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+</body>
+</html>
+<!--
+An Image as The List Item Marker:
+==> list-style-image property specifies an image as the list item marker
+
+ul {
+  list-style-image: url('sqpurple.gif');
+}
+
+Position The List Item Markers:
+==> list-style-position property specifies the position of the list-item markers (bullet points)
+ul.a {
+  list-style-position: outside;
+}
+
+ul.b {
+  list-style-position: inside;
+}
+
+==> "list-style-position: outside;" ==> bullet points will be outside the list item
+==> "list-style-position: inside;" ==> bullet points will be inside the list item
+	 As it is part of the list item, it will be part of the text and push the text at the start
+	 
+Remove Default Settings:
+==> list-style-type:none property can also be used to remove the markers/bullets
+==> list also has default margin and padding. To remove this, add margin:0 and padding:0 to <ul> or <ol>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+List - Shorthand property:
+==> list-style property is a shorthand property. It is used to set all the list properties in one declaration
+==> order of the property values are:
+list-style-type
+list-style-position
+list-style-image
+-->

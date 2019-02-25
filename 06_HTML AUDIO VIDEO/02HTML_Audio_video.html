@@ -1,0 +1,32 @@
+<!--
+HTML AUDIO:
+==> Before HTML5, audio files could only be played in a browser with a plug-in (like flash).
+==> The HTML5 <audio> element specifies a standard way to embed audio in a web page.
+-->
+
+<!-- To play an audio file in HTML, use the <audio> element: -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<audio controls>
+  <source src="audio1.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>
+
+<!--
+==> The controls attribute adds audio controls, like play, pause, and volume.
+==> In HTML5, there are 3 supported audio formats: MP3, WAV, and OGG.
+
+==> loop attribute:
+	==> The loop attribute is a boolean attribute.
+	==> When present, it specifies that the audio will start over again, every time it is finished.
+<audio controls loop>
+
+==> muted attribute:
+	==> The muted attribute is a boolean attribute.
+	==> When present, it specifies that the audio output should be muted.
+<audio controls muted>
+-->

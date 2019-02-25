@@ -1,0 +1,205 @@
+<!--
+Pagination:
+==> If you have a web site with lots of pages, you may wish to add some sort of pagination to each page
+==> To create a basic pagination, add the .pagination class to an <ul> element
+
+<ul class="pagination">
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+</ul>
+
+
+Active State:
+==> The active state shows what is the current page.
+==> Add class .active to let the user know which page he/she is on.
+
+<ul class="pagination">
+  <li><a href="#">1</a></li>
+  <li class="active"><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+</ul>
+
+
+Disabled State:
+==> A disabled link cannot be clicked.
+==> Add class .disabled if a link for some reason is disabled
+
+<ul class="pagination">
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li class="disabled"><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+</ul>
+
+
+Sizing:
+==> Add class .pagination-lg for larger blocks or .pagination-sm for smaller blocks.
+
+<ul class="pagination pagination-lg">
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+</ul>
+
+<ul class="pagination pagination-sm">
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+</ul>
+
+
+Breadcrumbs:
+==> Another form for pagination
+==> The .breadcrumb class indicates the current page's location within a navigational hierarchy
+
+<ul class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Private</a></li>
+  <li><a href="#">Pictures</a></li>
+  <li class="active">Vacation</li> 
+</ul>
+
+
+Pager:
+==> Pager provides previous and next buttons (links).
+==> To create previous/next buttons, add the .pager class to an <ul> element.
+
+<ul class="pager">
+  <li><a href="#">Previous</a></li>
+  <li><a href="#">Next</a></li>
+</ul>
+
+
+Align Buttons:
+==> Use the .previous and .next classes to align each button to the sides of the page.
+<ul class="pager">
+  <li class="previous"><a href="#">Previous</a></li>
+  <li class="next"><a href="#">Next</a></li>
+</ul>
+
+
+List Groups:
+==> The most basic list group is an unordered list with list items
+==> To create a basic list group, use an <ul> element with class 
+.list-group, and <li> elements with class .list-group-item
+
+<ul class="list-group">
+  <li class="list-group-item">First item</li>
+  <li class="list-group-item">Second item</li>
+  <li class="list-group-item">Third item</li>
+</ul>
+
+
+List Group With Badges:
+==> To create a badge, create a <span> element with class .badge inside the list item.
+
+<ul class="list-group">
+  <li class="list-group-item">New <span class="badge">12</span></li>
+  <li class="list-group-item">Deleted <span class="badge">5</span></li> 
+  <li class="list-group-item">Warnings <span class="badge">3</span></li> 
+</ul>
+
+
+List Group With Linked Items:
+==> o create a list group with linked items, use <div> instead of <ul> and <a> instead of <li>
+
+<div class="list-group">
+  <a href="#" class="list-group-item">First item</a>
+  <a href="#" class="list-group-item">Second item</a>
+  <a href="#" class="list-group-item">Third item</a>
+</div>
+
+
+Active State:
+==> Use the .active class to highlight the current item.
+<div class="list-group">
+  <a href="#" class="list-group-item active">First item</a>
+  <a href="#" class="list-group-item">Second item</a>
+  <a href="#" class="list-group-item">Third item</a>
+</div>
+
+Disabled Item:
+==> To disable an item, add the .disabled class.
+
+<div class="list-group">
+  <a href="#" class="list-group-item disabled">First item</a>
+  <a href="#" class="list-group-item">Second item</a>
+  <a href="#" class="list-group-item">Third item</a>
+</div>
+
+Contextual Classes:
+==> The classes for coloring list-items are: .list-group-item-success,
+list-group-item-info, list-group-item-warning, and .list-group-item-danger
+
+<ul class="list-group">
+  <li class="list-group-item list-group-item-success">First item</li>
+  <li class="list-group-item list-group-item-info">Second item</li>
+  <li class="list-group-item list-group-item-warning">Third item</li>
+  <li class="list-group-item list-group-item-danger">Fourth item</li>
+</ul>
+
+Custom Content:
+==> Bootstrap provides the classes .list-group-item-heading and .list-group-item-text
+
+<div class="list-group">
+  <a href="#" class="list-group-item active">
+    <h4 class="list-group-item-heading">First List Group Item Heading</h4>
+    <p class="list-group-item-text">List Group Item Text</p>
+  </a>
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">Second List Group Item Heading</h4>
+    <p class="list-group-item-text">List Group Item Text</p>
+  </a>
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">Third List Group Item Heading</h4>
+    <p class="list-group-item-text">List Group Item Text</p>
+  </a>
+</div>
+
+
+
+Panels:
+==> A panel in bootstrap is a bordered box with some padding around its content.
+==> Panels are created with the .panel class, and content inside the panel has a .panel-body class
+
+<div class="panel panel-default">
+  <div class="panel-body">A Basic Panel</div>
+</div>
+==> .panel-default ==> contextual classes
+
+==> The .panel-heading class adds a heading to the panel
+<div class="panel panel-default">
+  <div class="panel-heading">Panel Heading</div>
+  <div class="panel-body">Panel Content</div>
+</div>
+
+==> The .panel-footer class adds a footer to the panel
+<div class="panel panel-default">
+  <div class="panel-body">Panel Content</div>
+  <div class="panel-footer">Panel Footer</div>
+</div>
+
+==> To group many panels together, wrap a <div> with class .panel-group around them.
+==> The .panel-group class clears the bottom-margin of each panel.
+<div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-body">Panel Content</div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-body">Panel Content</div>
+  </div>
+</div>
+
+==> To color the panel, use contextual classes (.panel-default, .panel-primary, 
+.panel-success, .panel-info, .panel-warning, or .panel-danger)
+-->

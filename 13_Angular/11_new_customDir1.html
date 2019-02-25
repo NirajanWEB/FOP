@@ -1,0 +1,40 @@
+<!--
+Restriction:
+
+-->
+
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body ng-app="myApp">
+
+<my-test-directive></my-test-directive>
+
+<div my-test-directive></div>
+
+<script>
+var app = angular.module("myApp", []);
+app.directive("myTestDirective", function() {
+    return {
+        restrict : "A",
+        template : "<h1>Restriction by A</h1>"
+    };
+});
+</script>
+
+
+</body>
+</html>
+
+<!--
+By adding a restrict property with the value "A", the directive can only be invoked by attributes:
+
+restrict values are:
+
+E for Element name
+A for Attribute
+C for Class
+M for Comment
+
+By default the value is EA, meaning that both Element names and attribute names can invoke the directive.
+-->

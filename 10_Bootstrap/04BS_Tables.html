@@ -1,0 +1,132 @@
+<!--
+Bootstrap Tables:
+==> The .table class adds basic styling to a table:
+
+Striped Rows:
+==> The .table-striped class adds zebra-stripes to a table:
+<table class="table table-striped">
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Basic Table</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Basic Table</h2>
+  <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>            
+  <div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+</body>
+</html>
+<!--
+Bordered Table:
+==> The .table-bordered class adds borders on all sides of the table and cells:
+<table class="table table-bordered">
+
+Hover Rows:
+==> The .table-hover class adds a hover effect (grey background color) on table rows:
+ <table class="table table-hover">
+ 
+Condensed Table:
+==> The .table-condensed class makes a table more compact by cutting cell padding in half:
+ <table class="table table-condensed">
+ 
+Contextual Classes:
+==> Contextual classes can be used to color table rows (<tr>) or table cells (<td>):
+<table class="table">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Default</td>
+        <td>Defaultson</td>
+        <td>def@somemail.com</td>
+      </tr>      
+      <tr class="success">
+        <td>Success</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr class="danger">
+        <td>Danger</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr class="info">
+        <td>Info</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+      <tr class="warning">
+        <td>Warning</td>
+        <td>Refs</td>
+        <td>bo@example.com</td>
+      </tr>
+      <tr class="active">
+        <td>Active</td>
+        <td>Activeson</td>
+        <td>act@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+  
+
+Class		Description
+.active		Applies the hover color to the table row or table cell
+.success	Indicates a successful or positive action
+.info		Indicates a neutral informative change or action
+.warning	Indicates a warning that might need attention
+.danger		Indicates a dangerous or potentially negative action
+
+
+Responsive Tables:
+==> The .table-responsive class creates a responsive table.
+<div class="table-responsive">
+  <table class="table">
+    ...
+  </table>
+</div>
+
+-->

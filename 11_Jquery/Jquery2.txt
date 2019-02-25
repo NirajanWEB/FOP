@@ -1,0 +1,139 @@
+jQuery Event Methods
+
+What are Events?
+
+==> actions that a web page can respond to are called events.
+	
+	Examples:
+	moving a mouse over an element
+	selecting a radio button
+	clicking on an element
+
+Some Common events:
+
+Mouse Events	Keyboard Events		Form Events	Document/Window Events
+
+click		keypress		submit		load
+dblclick	keydown			change		resize
+mouseenter	keyup			focus		scroll
+mouseleave	 			blur		unload
+
+syntax:
+
+$("p").click(function(){
+  // action goes here!!
+});
+
+
+click()
+---------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+    });
+});
+</script>
+</head>
+<body>
+
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+
+</body>
+</html>
+------------------------------------------------------------------------------------------
+
+dblclick()
+------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("p").dblclick(function(){
+        $(this).hide();
+    });
+});
+</script>
+</head>
+<body>
+
+<p>If you double-click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+
+</body>
+</html>
+---------------------------------------------------------------------------------------------
+mouseenter()
+---------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#p1").mouseenter(function(){
+        alert("You entered p1!");
+    });
+});
+</script>
+</head>
+<body>
+
+<p id="p1">Enter this paragraph.</p>
+
+</body>
+</html>
+---------------------------------------------------------------------------------------------
+mouseleave()
+---------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#p1").mouseleave(function(){
+        alert("Bye! You now leave p1!");
+    });
+});
+</script>
+</head>
+<body>
+
+<p id="p1">This is a paragraph.</p>
+
+</body>
+</html>
+-------------------------------------------------------------------------------------------
+mousedown()
+==> The function is executed, when the left, middle or right mouse button is pressed down, 
+while the mouse is over the HTML element:
+-------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#p1").mousedown(function(){
+        alert("Mouse down over p1!");
+    });
+});
+</script>
+</head>
+<body>
+
+<p id="p1">This is a paragraph.</p>
+
+</body>
+</html>
+--------------------------------------------------------------------------------------------

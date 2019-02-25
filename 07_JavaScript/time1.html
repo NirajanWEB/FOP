@@ -1,0 +1,30 @@
+<script>
+var myVar = setInterval(myfunc, 1000);
+function myfunc(){
+  const since   = 1491685200000, // Saturday, 08-Apr-17 21:00:00 UTC
+        elapsed = (new Date().getTime() - since) / 1000;
+		
+	days    = Math.floor(elapsed / 86400);
+    hours   = Math.floor(elapsed / 3600 % 24);
+    minutes = Math.floor(elapsed / 60 % 60);
+    seconds = Math.floor(elapsed % 60);
+
+  if (days < 1 && hours < 1 ) {
+  document.getElementById("demo").innerHTML = minutes + " minutes ago";
+  }
+  else if (days < 1 && hours >= 1) {
+  document.getElementById("demo").innerHTML = hours + " hours ago";
+  }
+  else if (days >= 1){
+  document.getElementById("demo").innerHTML = days + " days ago";
+  }
+    
+
+	
+  else {
+    alert('Elapsed time lesser than 0, i.e. specified datetime is still in the future.');
+  }
+};
+
+</script>
+<p id = "demo"></p>

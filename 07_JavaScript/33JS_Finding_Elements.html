@@ -1,0 +1,42 @@
+<!--
+Finding HTML Elements:
+
+==> Finding HTML Element by Id:
+<p id="intro">Hello World!</p>
+<script>
+var myElement = document.getElementById("intro");
+document.getElementById("demo").innerHTML = 
+"The text from the intro paragraph is " + myElement.innerHTML;
+</script>
+
+==> Finding HTML Elements by Tag Name:
+var x = document.getElementsByTagName("p");
+
+==> Finding HTML Elements by Class Name :
+var x = document.getElementsByClassName("intro");
+
+==> Finding HTML Elements by CSS Selectors:
+var x = document.querySelectorAll("p.intro");
+==> This example returns a list of all <p> elements with class="intro".
+
+
+Changing HTML:
+==> Changing the HTML Output Stream:
+	==> document.write() can be used to write directly to the HTML output stream:
+	document.write(Date());
+	
+==> Changing HTML Content:
+	==> document.getElementById(id).innerHTML = new HTML
+	document.getElementById("p1").innerHTML = "New text!"
+	
+==> Changing the Value of an Attribute:
+	==> document.getElementById(id).attribute = new value
+	document.getElementById("myImage").src = "landscape.jpg"
+	
+==> Changing HTML Style:
+	==> document.getElementById(id).style.property = new style
+	document.getElementById('id1').style.color = 'red'
+	
+==> 
+
+-->

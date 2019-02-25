@@ -1,0 +1,19 @@
+<canvas id="myCanvas" width="200" height="100"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script>
+
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.moveTo(100,5);
+ctx.lineTo(5,95);
+ctx.stroke();
+ctx.moveTo(100,5);
+ctx.lineTo(195,95);
+ctx.stroke();
+ctx.moveTo(50,50);
+ctx.lineTo(150,50);
+ctx.stroke();
+</script>

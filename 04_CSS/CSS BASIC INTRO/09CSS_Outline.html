@@ -1,0 +1,137 @@
+<!--
+CSS Outline:
+==> An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".
+
+outline properties:
+
+outline-style
+outline-color
+outline-width
+outline-offset
+outline
+
+Outline Style:
+==> The outline-style property specifies the style of the outline
+
+dotted 	- Defines a dotted outline
+dashed 	- Defines a dashed outline
+solid 	- Defines a solid outline
+double 	- Defines a double outline
+groove 	- Defines a 3D grooved outline
+ridge 	- Defines a 3D ridged outline
+inset 	- Defines a 3D inset outline
+outset 	- Defines a 3D outset outline
+none 	- Defines no outline
+hidden 	- Defines a hidden outline
+
+Outline Color:
+==> The outline-color property is used to set the color of the outline
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.ex1 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+}
+
+p.ex2 {
+  border: 1px solid black;
+  outline-style: double;
+  outline-color: green;
+}
+
+p.ex3 {
+  border: 1px solid black;
+  outline-style: outset;
+  outline-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h2>The outline-color Property</h2>
+
+<p class="ex1">A solid red outline.</p>
+<p class="ex2">A double green outline.</p>
+<p class="ex3">An outset yellow outline.</p>
+
+</body>
+</html>
+<!--
+==> The following example uses outline-color: invert, which performs a color inversion. 
+This ensures that the outline is visible, regardless of color background
+
+p.ex1 {
+  border: 1px solid yellow;
+  outline-style: solid;
+  outline-color: invert;
+}
+
+
+Outline Width:
+==> The outline-width property specifies the width of the outline
+
+thin (typically 1px)
+medium (typically 3px)
+thick (typically 5px)
+A specific size (in px, pt, cm, em, etc)
+
+p.ex1 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: thin;
+}
+
+p.ex2 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: medium;
+}
+
+p.ex3 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: thick;
+}
+
+p.ex4 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: 4px;
+}
+
+Outline - Shorthand property:
+==> The outline property is a shorthand property 
+outline-width
+outline-style (required)
+outline-color
+
+p.ex1 {outline: dashed;}
+p.ex2 {outline: dotted red;}
+p.ex3 {outline: 5px solid yellow;}
+p.ex4 {outline: thick ridge pink;}
+
+==> The outline property is specified as one, two, or three values
+==> The order of the values does not matter
+
+Outline Offset:
+==> The outline-offset property adds space between an outline and the edge/border of an element.
+p {
+  margin: 30px;
+  background: yellow;
+  border: 1px solid black;
+  outline: 1px solid red;
+  outline-offset: 15px;
+}
+
+
+
+
+-->

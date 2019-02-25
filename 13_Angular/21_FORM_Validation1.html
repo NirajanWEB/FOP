@@ -1,0 +1,36 @@
+<!--
+Form Validation:
+
+CSS Classes:
+ng-untouched 	The field has not been touched yet
+ng-touched 		The field has been touched
+ng-pristine 	The field has not been  modified yet
+ng-dirty 		The field has been modified
+ng-valid 		The field content is valid
+ng-invalid 		The field content is not valid
+ng-valid-key 	One key for each validation. Example: ng-valid-required
+ng-invalid-key 	Example: ng-invalid-required
+-->
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>  
+<style>
+input.ng-invalid {
+    background-color:pink;
+}
+input.ng-valid {
+    background-color:lightgreen;
+}
+</style>
+<body ng-app="">
+
+<p>Try writing in the input field:</p>
+
+<form name="myForm">
+<input name="myName" ng-model="myName" required>
+</form>
+
+<p>The input field requires content, and will therefore become green when you write in it.</p>
+
+</body>
+</html>

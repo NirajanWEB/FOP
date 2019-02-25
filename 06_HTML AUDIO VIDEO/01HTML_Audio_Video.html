@@ -1,0 +1,56 @@
+<!--
+Videos in HTML:
+==> Before HTML5, a video could only be played in a browser with a plug-in (like flash).
+==> The HTML5 <video> element specifies a standard way to embed a video in a web page.
+-->
+
+<!-- To show a video in HTML, use the <video> element: -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+</video>
+
+</body>
+</html>
+
+<!--
+==> The controls attribute adds video controls, like play, pause, and volume.
+==> It is a good idea to always include width and height attributes. 
+If height and width are not set, the page might flicker while the video loads.
+-->
+
+<!-- To start a video automatically use the autoplay attribute: -->
+<!--
+<!DOCTYPE html>
+<html>
+<body>
+
+<video width="320" height="240" controls autoplay>
+  <source src="movie.mp4" type="video/mp4">
+</video>
+
+</body>
+</html>
+-->
+<!-- 
+==> The autoplay attribute does not work in mobile devices like iPad and iPhone.
+==> In HTML5, there are 3 supported video formats: MP4, WebM, and Ogg. 
+
+==> <track> ==> Defines text tracks in media players
+ <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+ 
+==> loop attribute:
+	==> The loop attribute is a boolean attribute.
+	==> When present, it specifies that the video will start over again, every time it is finished.
+<video controls loop>
+
+==> muted attribute:
+	==> The muted attribute is a boolean attribute.
+	==> When present, it specifies that the audio output of the video should be muted.
+<video controls muted>
+-->
+
+

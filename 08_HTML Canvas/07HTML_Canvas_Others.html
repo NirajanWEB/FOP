@@ -1,0 +1,37 @@
+<!--
+bezierCurveTo() Method:
+moveTo(x,y) ==> initial Point
+context.bezierCurveTo(cp1x,cp1y,cp2x,cp2y,x,y);
+==> cp1x,cp1x,c2px,c2py ==> control points ==> x,y ==> end point
+
+
+quadraticCurveTo() Method:
+==> context.quadraticCurveTo(cpx,cpy,x,y);
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.moveTo(20, 20);
+ctx.quadraticCurveTo(20, 100, 200, 20);
+ctx.stroke();
+
+
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.moveTo(20, 20);
+ctx.bezierCurveTo(20, 100, 200, 100, 200, 20);
+ctx.stroke();
+</script> 
+
+</body>
+</html>

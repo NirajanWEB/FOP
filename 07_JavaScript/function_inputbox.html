@@ -1,0 +1,60 @@
+<!--
+JavaScript Functions:
+A JavaScript function is a block of code designed to perform a particular task.
+A JavaScript function is executed when "something" invokes it (calls it).
+
+JavaScript Function Syntax:
+function name(parameter1, parameter2, parameter3) {
+    code to be executed
+}
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>This example calls a function which performs a calculation, and returns the result:</p>
+x: <input type = "number" id = "a">
+y: <input type = "number" id = "b">
+<button onclick="myFunction()"> click </button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+var x = document.getElementById("a").value;
+var y = document.getElementById("b").value;
+
+//x = parseInt(prompt("Enter x"));
+//y = parseInt(prompt("Enter y"));
+document.getElementById("demo").innerHTML = x*y;
+}
+</script>
+
+</body>
+</html>
+
+<!--
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>This example calls a function to convert from Fahrenheit to Celsius:</p>
+<p id="demo"></p>
+
+<script>
+function toCelsius(f) {
+  return (5/9) * (f-32);
+}
+document.getElementById("demo").innerHTML = toCelsius(77);
+</script>
+
+</body>
+</html>
+
+Accessing a function without () will return the function definition instead of the function result:
+-->

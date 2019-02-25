@@ -1,0 +1,60 @@
+<!--
+CSS Backgrounds:
+
+CSS background properties:
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+
+Background Color:
+==> The background-color property specifies the background color of an element.
+body {
+  background-color: lightblue;
+}
+
+Background Image:
+==> The background-image property specifies an image to use as the background of an element.
+==> By default, the image is repeated so it covers the entire element
+body {
+  background-image: url("image.gif");
+}
+
+Background Image - Repeat:
+==> To repeat an image horizontally, set background-repeat: repeat-x;
+==> To repeat an image vertically, set background-repeat: repeat-y;
+==> For no repeat, set background-repeat: no-repeat;
+
+Background Image - Set position:
+==> position of the image is specified by the background-position property
+body {
+  background-image: url("image.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+Background Image - Fixed position:
+==> To specify that the background image should be fixed
+(will not scroll with the rest of the page), use the background-attachment property
+body {
+  background-image: url("image.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+
+Background - Shorthand property:
+==> to specify all the background properties in one single property called as shorthand property.
+==> shorthand property for background is background:
+body {
+  background: #ffffff url("image.png") no-repeat right top;
+}
+
+order of the shorthand property values:
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+-->
